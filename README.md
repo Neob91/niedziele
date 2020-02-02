@@ -2,4 +2,4 @@
 
 ### Description
 
-A set of tools to determinine which Sundays fall under the commerce ban in Poland.
+A set of tools to determine which Sundays fall under the commerce ban in Poland.
