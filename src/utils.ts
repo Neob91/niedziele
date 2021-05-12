@@ -1,5 +1,9 @@
 export const getDateAsString = (date: string | Date): string => {
-  return typeof date === 'string' ? date : date.toISOString().split('T')[0];
+  if (typeof date !== 'string') {
+    return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split('T')[0];
+  }
+
+  return date;
 };
 
 export const getDateAsObject = (date: string | Date): Date => {
