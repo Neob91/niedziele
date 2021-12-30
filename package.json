@@ -1,6 +1,6 @@
 {
   "name": "niedziele",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A set of tools to determine which Sundays fall under the commerce ban in Poland.",
   "main": "dist/index.js",
   "scripts": {
