@@ -7,5 +7,10 @@ export const getDateAsString = (date: string | Date): string => {
 };
 
 export const getDateAsObject = (date: string | Date): Date => {
-  return typeof date === 'string' ? new Date(date) : date;
+  if (typeof date === 'string') {
+    const [year, month, day] = date.split(/\D/);
+    return new Date(Number(year), Number(month) - 1, Number(day));
+  }
+
+  return date;
 };
